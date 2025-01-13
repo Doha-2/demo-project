@@ -1,0 +1,71 @@
+<section class="my-bg d-flex flex-column justify-content-center align-items-center min-vh-100 ">
+  <div class="container ">
+    <h2 class="fw-bold text-center ">PORTFOLIO COMPONENT</h2>
+    <div class="d-flex justify-content-center align-items-center my-3">
+      <div class="line"></div>
+      <span class="mx-2 fs-4">★</span>
+      <div class="line"></div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+      <div class="col">
+        <div class="my-container" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectImage('/image/poert1.png')">
+          <img src="/image/poert1.png" alt="home" class="image w-100">
+          <div class="overlay">
+            <span class="text"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="my-container" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectImage('/image/port2.png')">
+          <img src="/image/port2.png" alt="home" class="image w-100">
+          <div class="overlay">
+            <span class="text"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="my-container" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectImage('/image/port3.png')">
+          <img src="/image/port3.png" alt="home" class="image w-100">
+          <div class="overlay">
+            <span class="text"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="my-container" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectImage('/image/poert1.png')">
+          <img src="/image/poert1.png" alt="home" class="image w-100">
+          <div class="overlay">
+            <span class="text"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="my-container" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectImage('/image/port2.png')">
+          <img src="/image/port2.png" alt="home" class="image w-100">
+          <div class="overlay">
+            <span class="text"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="my-container" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectImage('/image/port3.png')">
+          <img src="/image/port3.png" alt="home" class="image w-100">
+          <div class="overlay">
+            <span class="text"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img [src]="selectedImage" alt="Selected" class="w-100 h-100 object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

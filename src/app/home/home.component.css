@@ -1,0 +1,13 @@
+.my-bg{
+    background-color: #1ABC9C; 
+}
+.line {
+    height: 2px;
+    width: 100px; 
+    background-color: rgb(255, 255, 255);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
